@@ -9,6 +9,6 @@ export class EntryService {
     getEntries(): Promise<Entry[]> {
      return this.http.get("/app/entries")
             .toPromise()
-            .then(response => reponse.json().data as Entry[]);
+            .then(response => response.json().data as Entry[]);
     }
 }
